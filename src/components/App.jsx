@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
-// import Layout from './Layout/Layout';
+import Layout from './Layout/Layout';
 import { MainTitle, SubTitle } from './Titles';
 
 class App extends Component {
@@ -103,13 +103,13 @@ class App extends Component {
     const { filter } = this.state;
 
     return (
-      <div>
+      <Layout>
         <MainTitle title="Phonebook" />
         <ContactForm onSubmit={this.handleAddContact} />
         <SubTitle title="Contacts" />
         <Filter value={filter} onChange={this.handleSearchInputChange} />
         <ContactList contacts={filteredContacts} onDelete={this.handleDelete} />
-      </div>
+      </Layout>
     );
   }
 }
