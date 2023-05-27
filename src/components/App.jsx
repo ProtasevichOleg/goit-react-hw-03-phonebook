@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid';
 import ContactForm from './ContactForm';
 import ContactList from './ContactList';
 import Filter from './Filter';
-import Layout from './Layout';
+import Layout from './Layout/Layout';
 import { MainTitle, SubTitle } from './Titles';
 
 class App extends Component {
