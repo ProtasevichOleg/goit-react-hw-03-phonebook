@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container } from './Layout.styled';
 
 const Layout = ({ children }) => <Container>{children}</Container>;
